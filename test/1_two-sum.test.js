@@ -19,9 +19,9 @@
 const twoSum = require("../questions/1_two-sum");
 
 
-test.only('nums=[2, 7, 11, 15], target=9, result=[0 ,1]', () => {
+test('nums=[2, 7, 11, 15], target=9, result=[0 ,1]', () => {
     const nums = [2, 7, 11, 15];
     const target = 9;
     const resulst = [0,1];
-    expect(twoSum(nums, target)).toBe([0,1]);
+    expect(twoSum(nums, target)).toEqual(resulst);
 })
