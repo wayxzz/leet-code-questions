@@ -1,18 +1,22 @@
 {
-  "name": "leet-code-baiye",
-  "version": "0.0.1",
-  "description": "Simple generate file with template ",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest ./test/1_two-sum.test.js"
-  },
-  "keywords": [
-    "Leet Code"
-  ],
-  "author": "baiye <niewei502533466@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "jest": "^23.0.0",
-    "mongodb": "^3.1.0-beta4"
-  }
+    "name": "leet-code-baiye",
+    "version": "0.0.1",
+    "description": "Leet Code questions",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest ./test/2_add-two-numbers.test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wayxzz/leet-code-questions.git"
+    },
+    "keywords": [
+        "Leet Code"
+    ],
+    "author": "baiye <niewei502533466@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "jest": "^23.0.0",
+        "mongodb": "^3.1.0-beta4"
+    }
 }

@@ -6,10 +6,72 @@
  * 
  * 示例：
  * 
- * 输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)
- * 输出：7 -&gt; 0 -&gt; 8
+ * 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
+ * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  * 
  * 
  *
  */
+
+
+ /**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+function ListNode(val) {
+    this.val = val;
+    this.next = null;
+}
+
+
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+const addTwoNumbers = function(l1, l2) {
+    let head = new ListNode();
+    let originalHead = head;
+    let carry = 0;
+    let val = 0;
+    let v1 = 0;
+    let v2 = 0;
+
+    while(l1 || l2 || carry) {
+        v1 = 0;
+        v2 = 0;
+        if(l1) {
+            v1 = l1.val;
+            l1 = l1.next;
+        }
+        if(l2) {
+            v2 = l2.val;
+            l2 = l2.next;
+        }
+
+        let sum = v1 + v2 + carry;
+
+        if(sum >= 10) {
+            val = sum - 10;
+            carry = 1;
+        } else {
+            val = sum;
+            carry = 0;
+        }
+
+        head.next = new ListNode(val);
+        head = head.next;
+    }
+
+    return originalHead.next;
+};
+
+
+module.exports = {
+    ListNode,
+    addTwoNumbers
+}
