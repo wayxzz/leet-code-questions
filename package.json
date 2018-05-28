@@ -4,7 +4,7 @@
     "description": "Leet Code questions",
     "main": "index.js",
     "scripts": {
-        "test": "jest ./test/2_add-two-numbers.test.js"
+        "test": "jest ./test/3_longest-substring-without-repeating-characters.test.js"
     },
     "repository": {
         "type": "git",
