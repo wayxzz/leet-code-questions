@@ -13,53 +13,56 @@
  *
  */
 
- const lengthOfLongestSubstring = require("../questions/3_longest-substring-without-repeating-characters");
+const lengthOfLongestSubstring = require("../questions/3_longest-substring-without-repeating-characters");
 
-test('The longest substring without repeating characters of string "" is 0', () => {
-    const str = '';
-    const result = 0;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
-})
-
-test('The longest substring without repeating characters of string "abcabcbb" is 3', () => {
-    const str = 'abcabcbb';
-    const result = 3;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
-})
-
-test('The longest substring without repeating characters of string "bbbbb" is 1', () => {
-    const str = 'bbbbb';
-    const result = 1;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
-})
-
-test('The longest substring without repeating characters of string "pwwkew" is 3', () => {
-    const str = 'pwwkew';
-    const result = 3;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
-})
-
-test('The longest substring without repeating characters of string "au" is 2', () => {
-    const str = 'au';
-    const result = 2;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
-})
-
-test('The longest substring without repeating characters of string "dvdf" is 3', () => {
-    const str = 'dvdf';
-    const result = 3;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
-})
-
-test('The longest substring without repeating characters of string "abcabaabcd" is 4', () => {
-    const str = 'abcdabcaba';
-    const result = 4;
-
-    expect(lengthOfLongestSubstring(str)).toBe(result);
+describe('The longest substring without repeating characters', () => {
+    
+    test('The longest substring without repeating characters of string "" is 0', () => {
+        const str = '';
+        const result = 0;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
+    
+    test('The longest substring without repeating characters of string "abcabcbb" is 3', () => {
+        const str = 'abcabcbb';
+        const result = 3;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
+    
+    test('The longest substring without repeating characters of string "bbbbb" is 1', () => {
+        const str = 'bbbbb';
+        const result = 1;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
+    
+    test('The longest substring without repeating characters of string "pwwkew" is 3', () => {
+        const str = 'pwwkew';
+        const result = 3;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
+    
+    test('The longest substring without repeating characters of string "au" is 2', () => {
+        const str = 'au';
+        const result = 2;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
+    
+    test('The longest substring without repeating characters of string "dvdf" is 3', () => {
+        const str = 'dvdf';
+        const result = 3;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
+    
+    test('The longest substring without repeating characters of string "abcabaabcd" is 4', () => {
+        const str = 'abcdabcaba';
+        const result = 4;
+    
+        expect(lengthOfLongestSubstring(str)).toBe(result);
+    })
 })
